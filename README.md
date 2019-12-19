@@ -1,5 +1,5 @@
 # HyperPhenotyping
-Python codes developed for processing hyperspectral images from 400 to 1700 nm (two cameras)
+## Python codes developed for processing hyperspectral images from 400 to 1700 nm (two cameras)
 
 
 (1) SpectralFinal: This manuscript is used to process hyperspectral images collected by PIKA II camera (400 to 900 nm)
