@@ -8,4 +8,4 @@
 ### (2) SpectralFinal_NIR: This script is used to process hyperspectral images collected by PIKA NIR camera (900 to 1700 nm)
 
 
-Questions can be directed to [Peng Fu](pengfu@illinois.edu) or  [Katherine Meacham](katmeach@illinois.edu) for any coding issues.
+Questions can be directed to Peng Fu (pengfu@illinois.edu) or  Katherine Meacham (katmeach@illinois.edu) for any coding issues.
