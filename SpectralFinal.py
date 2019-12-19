@@ -42,7 +42,7 @@ for li in range(0, len(filelist)):
     outfilename = outfolder + "\\" + filename[30:40] + "\\" + base + '.txt'
     
     # read header file
-    HDRfilename = filename + ".hdr"
+    HDRfilename = filename + ".hdr" 
     with open(HDRfilename) as f:
         content = f.read().splitlines()
     tempstr = [ti for ti in content if ti.startswith('shutter')][0]
