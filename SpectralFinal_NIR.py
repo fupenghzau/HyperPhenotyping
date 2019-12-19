@@ -16,6 +16,7 @@ from sklearn.cluster import KMeans
 import os
 import glob
 
+# may need to be changed based on the file path
 date = "2018-06-18"
 folder = "D:\Hyperspectral\\2018\\PIKA NIR\\" + date + "\\"
 suffix = folder + "*.bil"
@@ -69,7 +70,7 @@ for li in range(0, 1):
     
     # kmeans
     print("perform kmeans operations......\n")
-    numclass = 5
+    numclass = 6
     maximInter = 300
     scaler = preprocessing.StandardScaler().fit(Rkdata)
     Rkdata = scaler.transform(Rkdata)
