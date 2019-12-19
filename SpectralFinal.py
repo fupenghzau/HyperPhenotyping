@@ -16,16 +16,16 @@ from sklearn.cluster import KMeans
 import os
 import glob
 
-folder = "D:\Hyperspectral\\2017\\PIKA II\\2017-06-20\\"
+folder = "D:\Hyperspectral\\2017\\PIKA II\\2017-06-20\\" # filename needs to be changed
 suffix = folder + "*plot*.bil"
 filelist = glob.glob(suffix)
 filelist.sort()
-outfolder = "D:\\Hyperspectral\\2017\PIKA II output\\"
+outfolder = "D:\\Hyperspectral\\2017\PIKA II output\\"  # folder needs to be changed
 
-for li in range(0, 1):
+for li in range(0, len(filelist)):
 # local variables
 
-    filename = filelist[0]
+    filename = filelist[li]
     GainFile = "D:\\Hyperspectral\\calibration\\GainVIS.txt"
     OffsetFile = "D:\\Hyperspectral\\calibration\\OffsetVIS.txt"
     WavelengthFile = "D:\\Hyperspectral\\calibration\\wavelengthVIS.txt"
@@ -74,7 +74,7 @@ for li in range(0, 1):
     
     # kmeans
     print("perform kmeans operations......\n")
-    numclass = 5
+    numclass = 6  # may need to be changed based on the images
     maximInter = 300
     scaler = preprocessing.StandardScaler().fit(Rkdata)
     Rkdata = scaler.transform(Rkdata)
